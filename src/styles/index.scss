@@ -1,12 +1,18 @@
 body {
   margin: 0px;
   width: 100vw;
-  height: 100vh;
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1r 1fr 1fr 1fr 60px;
+  grid-template-areas:
+    "r m m m m m"
+    "r m m m m m"
+    "r m m m m m"
+    "r m m m m m"
+    "r m m m m m"
+    "n f f f f f";
 }
